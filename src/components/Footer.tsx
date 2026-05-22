@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const links = [
   { href: "/our-story", label: "הסיפור שלנו" },
@@ -15,7 +15,7 @@ export function Footer() {
     <footer className="bg-inkCare text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr] md:px-8">
         <div>
-          <h2 className="text-3xl font-black">BloomCare Kids</h2>
+          <h2 className="text-3xl font-black">BloomCare</h2>
           <p className="mt-3 max-w-xl text-base leading-7 text-white/70">
             מותג טיפול לילדים עם צמיחה, רוגע, ביטחון ותקווה.
           </p>
@@ -40,3 +40,4 @@ export function Footer() {
     </footer>
   );
 }
+

@@ -1,6 +1,6 @@
-import { MessageCircleHeart } from "lucide-react";
+﻿import { MessageCircleHeart } from "lucide-react";
 
-const whatsappText = encodeURIComponent("היי, אשמח לקבל מידע על BloomCare Kids");
+const whatsappText = encodeURIComponent("היי, אשמח לקבל מידע על BloomCare");
 
 export function WhatsAppButton() {
   return (
@@ -16,3 +16,4 @@ export function WhatsAppButton() {
     </a>
   );
 }
+

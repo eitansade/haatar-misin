@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, BookHeart, HeartHandshake } from "lucide-react";
@@ -48,8 +48,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     headline: article.title,
     description: article.description,
     inLanguage: "he-IL",
-    author: { "@type": "Organization", name: "BloomCare Kids" },
-    publisher: { "@type": "Organization", name: "BloomCare Kids" },
+    author: { "@type": "Organization", name: "BloomCare" },
+    publisher: { "@type": "Organization", name: "BloomCare" },
     mainEntityOfPage: `https://haatar-misin.vercel.app/articles/${article.slug}`,
   };
 
@@ -84,3 +84,4 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     </main>
   );
 }
+

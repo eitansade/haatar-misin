@@ -1,4 +1,4 @@
-import { SectionHeader } from "@/components/SectionHeader";
+﻿import { SectionHeader } from "@/components/SectionHeader";
 import { SupplierLanguagePanel } from "@/components/SupplierLanguagePanel";
 
 const traits = ["צבעונית", "שמחה", "מרגיעה", "משחקית", "ומלאת חיים"];
@@ -14,7 +14,7 @@ export default function OurStoryPage() {
           <p>יש ילדים שבוכים רק מלראות אינהלציה.</p>
           <p>יש ילדים שמסתירים את הקיבוע שלהם בבית ספר כדי שלא יצחקו עליהם.</p>
           <p>ויש הורים שמרגישים חסרי אונים מול זה.</p>
-          <p className="text-2xl font-black text-inkCare">הקמנו את BloomCare Kids בגלל דבר אחד פשוט:</p>
+          <p className="text-2xl font-black text-inkCare">הקמנו את BloomCare בגלל דבר אחד פשוט:</p>
           <p>ילדים לא אמורים להתבייש בציוד הרפואי שלהם. והם בטח לא אמורים לפחד ממנו.</p>
           <p>
             במשך שנים ציוד רפואי לילדים נראה קר, שחור, מלחיץ ומבוגר. כאילו שכחו שמי שמשתמש בו הם
@@ -60,3 +60,4 @@ export default function OurStoryPage() {
     </main>
   );
 }
+

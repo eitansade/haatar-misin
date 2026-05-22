@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { TermsLanguageContent } from "@/components/TermsLanguageContent";
 
 export const metadata: Metadata = {
   title: "תקנון שימוש ובטיחות",
-  description: "תקנון שימוש ובטיחות של BloomCare Kids בעברית ובאנגלית.",
+  description: "תקנון שימוש ובטיחות של BloomCare בעברית ובאנגלית.",
 };
 
 export default function TermsPage() {
   return (
     <main className="bg-creamCare px-5 py-16 md:px-8">
       <section className="mx-auto max-w-5xl">
-        <p className="mb-3 text-sm font-black text-coralCare">BloomCare Kids</p>
+        <p className="mb-3 text-sm font-black text-coralCare">BloomCare</p>
         <h1 className="text-4xl font-black leading-tight text-inkCare md:text-6xl">
           תקנון שימוש ובטיחות
         </h1>
@@ -25,3 +25,4 @@ export default function TermsPage() {
     </main>
   );
 }
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ShoppingBag, Sprout } from "lucide-react";
 import { MobileNav } from "./MobileNav";
 
@@ -20,7 +20,7 @@ export function Header() {
             <Sprout size={24} />
           </span>
           <span>
-            <span className="block text-lg font-black leading-none text-inkCare">BloomCare Kids</span>
+            <span className="block text-lg font-black leading-none text-inkCare">BloomCare</span>
             <span className="hidden text-xs font-bold text-inkCare/60 sm:block">לגדול בביטחון, להחלים ברוגע</span>
           </span>
         </Link>
@@ -47,3 +47,4 @@ export function Header() {
     </header>
   );
 }
+

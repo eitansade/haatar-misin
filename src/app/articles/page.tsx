@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, BookHeart } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { articles } from "@/data/articles";
 
 export const metadata: Metadata = {
-  title: "מדריכי הורים | BloomCare Kids",
+  title: "מדריכי הורים | BloomCare",
   description: "מאמרים להורים על הפחתת פחד מטיפול רפואי, אינהלציה, קיבועים וציוד רפואי ידידותי לילדים.",
 };
 
@@ -36,3 +36,4 @@ export default function ArticlesPage() {
     </main>
   );
 }
+

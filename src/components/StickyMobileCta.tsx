@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export function StickyMobileCta() {
   return (
@@ -7,8 +7,9 @@ export function StickyMobileCta() {
         href="/categories"
         className="soft-focus flex min-h-12 items-center justify-center rounded-full bg-coralCare px-5 text-base font-black text-white"
       >
-        לגלות את BloomCare Kids
+        לגלות את BloomCare
       </Link>
     </div>
   );
 }
+

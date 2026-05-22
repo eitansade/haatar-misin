@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { Globe2 } from "lucide-react";
@@ -16,7 +16,7 @@ export function SupplierLanguagePanel() {
               מידע לספקים ולשותפים
             </p>
             <h2 className="text-3xl font-black leading-tight text-inkCare">
-              להבין את BloomCare Kids גם באנגלית
+              להבין את BloomCare גם באנגלית
             </h2>
           </div>
           <div className="flex w-fit rounded-full bg-white p-1 shadow-sm">
@@ -44,7 +44,7 @@ export function SupplierLanguagePanel() {
         {language === "he" ? (
           <div className="mt-7 grid gap-5 text-lg leading-9 text-inkCare/75 md:grid-cols-2">
             <p>
-              BloomCare Kids הוא מותג ישראלי לטיפול רגשי-פדיאטרי, שנוצר כדי לעזור לילדים להרגיש
+              BloomCare הוא מותג ישראלי לטיפול רגשי-פדיאטרי, שנוצר כדי לעזור לילדים להרגיש
               רגועים, בטוחים ומובנים יותר בזמן טיפול רפואי או שיקום.
             </p>
             <p>
@@ -55,7 +55,7 @@ export function SupplierLanguagePanel() {
         ) : (
           <div className="mt-7 grid gap-5 text-left text-lg leading-8 text-inkCare/75 md:grid-cols-2" dir="ltr" lang="en">
             <p>
-              BloomCare Kids is an Israeli emotional pediatric care brand designed to help children feel safer, calmer,
+              BloomCare is an Israeli emotional pediatric care brand designed to help children feel safer, calmer,
               and more confident during medical or rehabilitation experiences.
             </p>
             <p>
@@ -68,3 +68,4 @@ export function SupplierLanguagePanel() {
     </section>
   );
 }
+

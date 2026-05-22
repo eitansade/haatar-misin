@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, SearchCheck } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { seoLandingPages } from "@/data/seoPages";
 
 export const metadata: Metadata = {
-  title: "מדריכי SEO להורים | BloomCare Kids",
+  title: "מדריכי SEO להורים | BloomCare",
   description: "עמודי מידע בעברית על ציוד רפואי לילדים, אינהלציה, קיבועים, שיקום ומוצרים ידידותיים לילדים בישראל.",
 };
 
@@ -40,3 +40,4 @@ export default function SeoIndexPage() {
     </main>
   );
 }
+
