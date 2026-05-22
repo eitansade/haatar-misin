@@ -5,6 +5,7 @@ const links = [
   { href: "/how-we-choose", label: "איך אנחנו בוחרים" },
   { href: "/categories", label: "קטגוריות" },
   { href: "/faq", label: "שאלות נפוצות" },
+  { href: "/terms", label: "תקנון" },
   { href: "/contact", label: "צור קשר" },
 ];
 

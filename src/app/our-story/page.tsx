@@ -1,4 +1,5 @@
 import { SectionHeader } from "@/components/SectionHeader";
+import { SupplierLanguagePanel } from "@/components/SupplierLanguagePanel";
 
 const traits = ["צבעונית", "שמחה", "מרגיעה", "משחקית", "ומלאת חיים"];
 const beliefs = ["פחות מפחיד", "פחות מביך", "ויותר אנושי."];
@@ -53,6 +54,9 @@ export default function OurStoryPage() {
           <p className="text-3xl font-black text-coralCare">עם צבע. עם דמיון. ועם לב.</p>
         </div>
       </article>
+      <div className="-mx-5 mt-12 md:-mx-8">
+        <SupplierLanguagePanel />
+      </div>
     </main>
   );
 }

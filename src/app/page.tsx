@@ -14,8 +14,10 @@ import {
   Video,
 } from "lucide-react";
 import { CategoryCard } from "@/components/CategoryCard";
+import { LegalNotice } from "@/components/LegalNotice";
 import { ProductCard } from "@/components/ProductCard";
 import { SectionHeader } from "@/components/SectionHeader";
+import { SupplierLanguagePanel } from "@/components/SupplierLanguagePanel";
 import { categories, featuredProducts, lovedByParents } from "@/data/products";
 import { faqs } from "@/data/faq";
 
@@ -125,6 +127,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <SupplierLanguagePanel />
 
       <section className="bg-peachCare/45 px-5 py-20 md:px-8">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -365,6 +369,27 @@ export default function HomePage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <LegalNotice />
+
+      <section className="bg-gradient-to-br from-skyCare via-creamCare to-peachCare px-5 py-20 md:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-3 text-sm font-black text-coralCare">הצעד הבא</p>
+          <h2 className="text-4xl font-black leading-tight text-inkCare md:text-6xl">
+            לעזור לילדים להרגיש בטוחים יותר
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-xl leading-9 text-inkCare/75">
+            כי גם טיפול רפואי יכול להגיע עם צבע, רוגע וחיוך קטן.
+          </p>
+          <Link
+            href="/categories"
+            className="soft-focus mt-9 inline-flex items-center gap-2 rounded-full bg-coralCare px-8 py-4 text-lg font-black text-white shadow-soft transition hover:-translate-y-1 hover:bg-inkCare"
+          >
+            למוצרים
+            <ArrowLeft size={20} />
+          </Link>
         </div>
       </section>
     </main>

@@ -9,6 +9,7 @@ const navItems = [
   { href: "/categories", label: "קטגוריות" },
   { href: "/parents", label: "להורים" },
   { href: "/faq", label: "שאלות נפוצות" },
+  { href: "/terms", label: "תקנון" },
 ];
 
 export function Header() {
