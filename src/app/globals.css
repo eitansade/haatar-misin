@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #8ecdf2;
+  --soft-peach: #ffd1be;
+  --cream-white: #fff9f4;
+  --happy-coral: #ff7f73;
+  --soft-mint: #bee8d3;
+  --text-dark: #22313f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream-white);
+  color: var(--text-dark);
+  font-family: Heebo, Rubik, "Segoe UI", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--soft-peach);
+  color: var(--text-dark);
+}
+
+.soft-focus:focus-visible {
+  outline: 3px solid rgba(142, 205, 242, 0.9);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fade-up 0.7s ease both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
