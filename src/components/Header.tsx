@@ -4,12 +4,11 @@ import { MobileNav } from "./MobileNav";
 
 const navItems = [
   { href: "/our-story", label: "הסיפור שלנו" },
-  { href: "/how-we-choose", label: "איך בוחרים" },
-  { href: "/why-it-matters", label: "למה זה חשוב" },
   { href: "/categories", label: "קטגוריות" },
+  { href: "/articles", label: "מדריכים" },
+  { href: "/seo", label: "מרכז מידע" },
   { href: "/parents", label: "להורים" },
   { href: "/faq", label: "שאלות נפוצות" },
-  { href: "/terms", label: "תקנון" },
 ];
 
 export function Header() {
