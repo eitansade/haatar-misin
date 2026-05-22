@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeartPulse, ShoppingBag } from "lucide-react";
+import { ShoppingBag, Sprout } from "lucide-react";
 import { MobileNav } from "./MobileNav";
 
 const navItems = [
@@ -17,12 +17,12 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-inkCare/10 bg-creamCare/90 backdrop-blur-xl">
       <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 md:px-8">
         <Link href="/" className="soft-focus flex items-center gap-3 rounded-full">
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-skyCare text-inkCare shadow-sm">
-            <HeartPulse size={24} />
+          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-mintCare to-skyCare text-inkCare shadow-sm">
+            <Sprout size={24} />
           </span>
           <span>
-            <span className="block text-lg font-black leading-none text-inkCare">CareKids Israel</span>
-            <span className="hidden text-xs font-bold text-inkCare/60 sm:block">עם צבע, ביטחון ולב</span>
+            <span className="block text-lg font-black leading-none text-inkCare">BloomCare Kids</span>
+            <span className="hidden text-xs font-bold text-inkCare/60 sm:block">לגדול בביטחון, להחלים ברוגע</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-bold text-inkCare/70 lg:flex">

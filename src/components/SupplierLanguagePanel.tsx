@@ -16,7 +16,7 @@ export function SupplierLanguagePanel() {
               מידע לספקים ולשותפים
             </p>
             <h2 className="text-3xl font-black leading-tight text-inkCare">
-              להבין את CareKids Israel גם באנגלית
+              להבין את BloomCare Kids גם באנגלית
             </h2>
           </div>
           <div className="flex w-fit rounded-full bg-white p-1 shadow-sm">
@@ -44,8 +44,8 @@ export function SupplierLanguagePanel() {
         {language === "he" ? (
           <div className="mt-7 grid gap-5 text-lg leading-9 text-inkCare/75 md:grid-cols-2">
             <p>
-              CareKids Israel הוא מותג ישראלי לציוד רפואי לילדים שעוצב כדי להפוך טיפול רפואי לפחות
-              מפחיד, פחות מביך ויותר אנושי.
+              BloomCare Kids הוא מותג ישראלי לטיפול רגשי-פדיאטרי, שנוצר כדי לעזור לילדים להרגיש
+              רגועים, בטוחים ומובנים יותר בזמן טיפול רפואי או שיקום.
             </p>
             <p>
               המוצרים נבחרים מתוך מחשבה על בטיחות, איכות וחוויה רגשית: איך הילד מרגיש כשהוא משתמש
@@ -55,12 +55,12 @@ export function SupplierLanguagePanel() {
         ) : (
           <div className="mt-7 grid gap-5 text-left text-lg leading-8 text-inkCare/75 md:grid-cols-2" dir="ltr" lang="en">
             <p>
-              CareKids Israel is an Israeli child-centered healthcare brand designed to make medical care feel less
-              frightening, less embarrassing, and more human for children.
+              BloomCare Kids is an Israeli emotional pediatric care brand designed to help children feel safer, calmer,
+              and more confident during medical or rehabilitation experiences.
             </p>
             <p>
-              We select products not only by medical quality and usability, but also by the emotional experience of the
-              child: comfort, confidence, calmness, and dignity during care.
+              We select products not only by quality and usability, but also by the emotional experience of the child:
+              growth, confidence, calmness, comfort, warmth, healing, and hope.
             </p>
           </div>
         )}

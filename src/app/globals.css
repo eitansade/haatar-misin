@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary-blue: #8ecdf2;
-  --soft-peach: #ffd1be;
+  --primary-blue: #9bd8f4;
+  --soft-peach: #ffd8c8;
   --cream-white: #fff9f4;
-  --happy-coral: #ff7f73;
-  --soft-mint: #bee8d3;
+  --happy-coral: #f9786d;
+  --soft-mint: #c9ecd9;
   --text-dark: #22313f;
 }
 
@@ -21,7 +21,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--cream-white);
+  background:
+    radial-gradient(circle at top left, rgba(201, 236, 217, 0.35), transparent 30rem),
+    radial-gradient(circle at top right, rgba(155, 216, 244, 0.28), transparent 28rem),
+    var(--cream-white);
   color: var(--text-dark);
   font-family: Heebo, Rubik, "Segoe UI", Arial, sans-serif;
   text-rendering: optimizeLegibility;

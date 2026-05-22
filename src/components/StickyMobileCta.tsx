@@ -7,7 +7,7 @@ export function StickyMobileCta() {
         href="/categories"
         className="soft-focus flex min-h-12 items-center justify-center rounded-full bg-coralCare px-5 text-base font-black text-white"
       >
-        לגלות מוצרים ידידותיים לילדים
+        לגלות את BloomCare Kids
       </Link>
     </div>
   );

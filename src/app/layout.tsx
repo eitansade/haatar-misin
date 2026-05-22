@@ -6,16 +6,16 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "CareKids Israel | ציוד רפואי לילדים עם צבע, ביטחון ולב",
-    template: "%s | CareKids Israel",
+    default: "BloomCare Kids | טיפול לילדים עם רוגע, ביטחון ותקווה",
+    template: "%s | BloomCare Kids",
   },
   description:
-    "ציוד רפואי לילדים שעוצב כדי להפחית פחדים, מבוכה ולתת לילדים יותר ביטחון.",
+    "BloomCare Kids הוא מותג טיפול רגשי-פדיאטרי שעוזר לילדים להרגיש בטוחים, רגועים ובטוחים יותר בזמן טיפול רפואי או שיקום.",
   metadataBase: new URL("https://haatar-misin.vercel.app"),
   openGraph: {
-    title: "CareKids Israel",
+    title: "BloomCare Kids",
     description:
-      "ציוד רפואי לילדים שעוצב כדי להפחית פחדים, מבוכה ולתת לילדים יותר ביטחון.",
+      "מותג טיפול לילדים שמתמקד ברוגע, ביטחון, צמיחה ונוחות רגשית בזמן טיפול רפואי או שיקום.",
     locale: "he_IL",
     type: "website",
   },

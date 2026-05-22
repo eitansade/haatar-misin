@@ -14,11 +14,11 @@ export default function OurStoryPage() {
           <p>יש ילדים שבוכים רק מלראות אינהלציה.</p>
           <p>יש ילדים שמסתירים את הקיבוע שלהם בבית ספר כדי שלא יצחקו עליהם.</p>
           <p>ויש הורים שמרגישים חסרי אונים מול זה.</p>
-          <p className="text-2xl font-black text-inkCare">אנחנו הקמנו את המותג הזה בגלל דבר אחד פשוט:</p>
+          <p className="text-2xl font-black text-inkCare">הקמנו את BloomCare Kids בגלל דבר אחד פשוט:</p>
           <p>ילדים לא אמורים להתבייש בציוד הרפואי שלהם. והם בטח לא אמורים לפחד ממנו.</p>
           <p>
             במשך שנים ציוד רפואי לילדים נראה קר, שחור, מלחיץ ומבוגר. כאילו שכחו שמי שמשתמש בו הם
-            ילדים עם פחדים, דמיון, רגשות וביטחון עצמי.
+            ילדים עם פחדים, דמיון, רגשות, צורך ברוגע וצורך בביטחון עצמי.
           </p>
           <p>אז החלטנו לשנות את זה.</p>
           <p className="text-2xl font-black text-inkCare">התחלנו לעצב מוצרים רפואיים לילדים בצורה אחרת:</p>
@@ -51,7 +51,7 @@ export default function OurStoryPage() {
             ובטוחים בעצמם גם כשהם צריכים טיפול.
           </p>
           <p>לא עוד “ציוד רפואי”. אלא מוצרים שנוצרו במיוחד לילדים.</p>
-          <p className="text-3xl font-black text-coralCare">עם צבע. עם דמיון. ועם לב.</p>
+          <p className="text-3xl font-black text-coralCare">עם רוך. עם צמיחה. ועם תקווה.</p>
         </div>
       </article>
       <div className="-mx-5 mt-12 md:-mx-8">

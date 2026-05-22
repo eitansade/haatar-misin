@@ -2,7 +2,7 @@ import { Mail, MapPin, MessageCircleHeart } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 
 const contactItems = [
-  { title: "אימייל", text: "carekids@example.com", Icon: Mail },
+  { title: "אימייל", text: "hello@bloomcare-kids.com", Icon: Mail },
   { title: "אזור פעילות", text: "משלוחים לכל הארץ", Icon: MapPin },
   { title: "פניות הורים", text: "שאלות על התאמה, קטגוריות ומוצרים עתידיים", Icon: MessageCircleHeart },
 ];
