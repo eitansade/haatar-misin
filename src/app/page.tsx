@@ -33,6 +33,15 @@ const trustPoints = [
   ["שירות אישי ואנושי", "בעתיד האתר יחובר לוואטסאפ, המלצות ותמיכה שמרגישה קרובה וברורה."],
 ];
 
+const entryLinks = [
+  { href: "/our-story", label: "מי אנחנו" },
+  { href: "/categories", label: "פתרונות ומוצרים" },
+  { href: "/seo", label: "מרכז מידע רפואי" },
+  { href: "/articles", label: "מדריכי הורים" },
+  { href: "/terms", label: "בטיחות ותקנון" },
+  { href: "/contact", label: "צור קשר" },
+];
+
 const schema = [
   {
     "@context": "https://schema.org",
@@ -83,56 +92,62 @@ export default function HomePage() {
     <main>
       <JsonLd data={schema} />
 
-      <section className="relative isolate overflow-hidden bg-creamCare">
-        <div className="absolute -right-24 top-16 h-96 w-96 rounded-full bg-peachCare/75 blur-3xl" />
-        <div className="absolute -left-24 top-28 h-96 w-96 rounded-full bg-skyCare/60 blur-3xl" />
-        <div className="absolute bottom-10 right-1/3 h-72 w-72 rounded-full bg-mintCare/55 blur-3xl" />
+      <section className="relative isolate min-h-[calc(100vh-82px)] overflow-hidden bg-inkCare text-white">
+        <img
+          src="https://images.pexels.com/photos/29973436/pexels-photo-29973436.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          alt="הורה וילד ברגע ביתי רגוע עם אור טבעי"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-inkCare/88 via-inkCare/55 to-inkCare/35" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(142,205,242,0.26),transparent_28rem),radial-gradient(circle_at_20%_80%,rgba(255,209,190,0.22),transparent_24rem)]" />
 
-        <div className="mx-auto grid min-h-[calc(100vh-82px)] max-w-7xl items-center gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1.02fr_0.98fr]">
-          <div className="relative z-10 fade-up">
-            <p className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 text-sm font-extrabold text-inkCare shadow-sm">
-              <Leaf size={16} className="text-coralCare" />
-              BloomCare | טיפול רגוע יותר לילדים ולמשפחות
-            </p>
-            <h1 className="max-w-4xl text-5xl font-black leading-[1.02] text-inkCare md:text-7xl">
-              טיפול רפואי יכול להרגיש אחרת.
-            </h1>
-            <p className="mt-7 max-w-2xl text-xl leading-9 text-inkCare/75">
-              ציוד רפואי ושיקומי לילדים שנבחר כדי להפחית פחד, מבוכה ולתת לילדים יותר ביטחון.
-            </p>
-            <p className="mt-5 max-w-2xl text-lg font-bold leading-8 text-inkCare/62">
-              לא עוד קטלוג רפואי קר. BloomCare נבנה כמו בית רגשי להורים שמחפשים רוגע, אמון וחוויה אנושית סביב רגעים רפואיים.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              {["פחות פחד", "יותר רוגע", "יותר ביטחון", "תחושה של בית"].map((item) => (
-                <span key={item} className="rounded-full bg-white/85 px-4 py-2 text-sm font-black text-inkCare shadow-sm">
-                  {item}
-                </span>
+        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-82px)] max-w-7xl px-5 py-10 md:px-8">
+          <aside className="hidden w-64 shrink-0 flex-col justify-center border-l border-white/18 pl-8 text-left lg:flex">
+            <p className="mb-8 text-sm font-black uppercase tracking-[0.35em] text-white/55">BloomCare</p>
+            <nav className="grid gap-5 text-lg font-light text-white/68">
+              {entryLinks.map((item) => (
+                <Link key={item.href} href={item.href} className="soft-focus transition hover:translate-x-1 hover:text-white">
+                  {item.label}
+                </Link>
               ))}
-            </div>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <Link
-                href="/categories"
-                className="soft-focus inline-flex items-center gap-2 rounded-full bg-coralCare px-7 py-4 text-base font-black text-white shadow-soft transition hover:-translate-y-1 hover:bg-inkCare"
-              >
-                לגלות את המוצרים
-                <ArrowLeft size={19} />
-              </Link>
-              <Link
-                href="/articles"
-                className="soft-focus inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-base font-black text-inkCare shadow-sm transition hover:bg-mintCare"
-              >
-                מדריכי הורים
-              </Link>
-            </div>
-          </div>
+            </nav>
+          </aside>
 
-          <div className="relative z-10 fade-up">
-            <EmotionalPhotoFrame
-              title="כאן תופיע תמונה אמיתית של הורה וילד ברגע רגוע בבית."
-              caption="אור טבעי, ספה, יד של הורה, ילד שמרגיש פחות לבד. זה הכיוון הוויזואלי שצריך להחליף את ה-placeholder."
-              tone="peach"
-            />
+          <div className="flex flex-1 items-center justify-end">
+            <div className="max-w-3xl py-16 text-right">
+              <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/12 px-5 py-3 text-sm font-extrabold text-white shadow-sm backdrop-blur">
+                <Leaf size={16} className="text-peachCare" />
+                מותג טיפול רגשי-רפואי למשפחות בישראל
+              </p>
+              <h1 className="text-5xl font-black leading-[1.02] text-white md:text-7xl">
+                טיפול רפואי יכול להרגיש אחרת.
+              </h1>
+              <p className="mt-7 max-w-2xl text-xl leading-9 text-white/82 md:text-2xl md:leading-10">
+                ציוד רפואי ושיקומי לילדים שנבחר כדי להפחית פחד, לחזק ביטחון ולתת להורים תחושה שיש על מי לסמוך.
+              </p>
+              <div className="mt-9 flex flex-wrap justify-end gap-3">
+                <Link
+                  href="/categories"
+                  className="soft-focus inline-flex items-center gap-2 rounded-full bg-coralCare px-7 py-4 text-base font-black text-white shadow-soft transition hover:-translate-y-1 hover:bg-white hover:text-inkCare"
+                >
+                  לגלות את המוצרים
+                  <ArrowLeft size={19} />
+                </Link>
+                <Link
+                  href="/our-story"
+                  className="soft-focus inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/12 px-7 py-4 text-base font-black text-white backdrop-blur transition hover:bg-white hover:text-inkCare"
+                >
+                  הסיפור שלנו
+                </Link>
+              </div>
+              <div className="mt-12 grid gap-3 text-sm font-bold text-white/72 sm:grid-cols-3">
+                {['גישה רגישה לילדים', 'בחירה קפדנית', 'מותאם למשפחות בישראל'].map((item) => (
+                  <span key={item} className="rounded-2xl border border-white/14 bg-white/10 px-4 py-3 text-center backdrop-blur">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
